@@ -1,0 +1,5 @@
+steps:
+
+- id: "Run unit tests"
+  name: 'go'
+  args: ['test']
