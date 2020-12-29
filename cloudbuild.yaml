@@ -1,5 +1,8 @@
-env: ["GOPATH=./src"]
 steps:
+
+- id: "Initialize go modules"
+  name: 'gcr.io/cloud-builders/go'
+  args: ['mod', 'init', './src']
 
 - id: "Run unit tests"
   name: 'gcr.io/cloud-builders/go'
