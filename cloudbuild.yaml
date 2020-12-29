@@ -1,5 +1,9 @@
 steps:
 
+- id: Set Go Path
+  name: 'export'
+  args: ['GOPATH=./src']
+
 - id: "Run unit tests"
   name: 'gcr.io/cloud-builders/go'
   args: ['test']
