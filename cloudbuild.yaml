@@ -1,5 +1,5 @@
-steps:
 env: ["GOPATH=./src"]
+steps:
 
 - id: "Run unit tests"
   name: 'gcr.io/cloud-builders/go'
