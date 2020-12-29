@@ -2,7 +2,7 @@ steps:
 
 - id: "Initialize go modules"
   name: 'gcr.io/cloud-builders/go'
-  args: ['mod', 'init', 'src']
+  args: ['mod', 'init', '.']
 
 - id: "Run unit tests"
   name: 'gcr.io/cloud-builders/go'
