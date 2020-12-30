@@ -17,6 +17,8 @@ steps:
   - '-t'
   - 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:1.1.0'
   - '.'
+  env: ['GOPATH=.']
+  dir: './src/full-cycle-desafio-ci'
 
 - id: 'Check image'
   name: 'grc.io/$PROJECT_ID/full-cycle-desafio-ci'
