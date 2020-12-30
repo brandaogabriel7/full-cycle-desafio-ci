@@ -10,8 +10,6 @@ steps:
   name: 'docker'
   args:
   - 'build'
-  - '--build-arg'
-  - 'version=1.1.0'
   - '-t'
   - 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:latest'
   - '-t'
