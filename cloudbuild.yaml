@@ -23,4 +23,5 @@ steps:
   args: ['version']
 
 images:
-- 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci'
+- 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:latest'
+- 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:1.1.0'
