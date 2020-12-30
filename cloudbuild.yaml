@@ -18,10 +18,6 @@ steps:
   - 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:1.1.0'
   - '.'
 
-- id: 'Check image'
-  name: 'grc.io/$PROJECT_ID/full-cycle-desafio-ci'
-  args: ['version']
-
 images:
 - 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:latest'
 - 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:1.1.0'
