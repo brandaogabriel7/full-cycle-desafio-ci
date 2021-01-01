@@ -1,0 +1,21 @@
+steps:
+
+- id: 'Run unit tests'
+  name: 'gcr.io/cloud-builders/go'
+  args: ['test', '.']
+  env: ['GOPATH=.']
+  dir: './src/full-cycle-desafio-ci'
+
+- id: "Build image"
+  name: 'docker'
+  args:
+  - 'build'
+  - '-t'
+  - 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:latest'
+  - '-t'
+  - 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:1.1.0'
+  - '.'
+
+images:
+- 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:latest'
+- 'gcr.io/$PROJECT_ID/full-cycle-desafio-ci:1.1.0'
