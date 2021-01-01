@@ -19,5 +19,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run unit tests
       run: go test
-      env:
-        GOPATH: .
+      env: ['GOPATH=.']
