@@ -8,7 +8,6 @@ on:
 
 defaults:
   run:
-    shell: branches
     working-directory: ./src/full-cycle-desafio-ci
 
 jobs:
